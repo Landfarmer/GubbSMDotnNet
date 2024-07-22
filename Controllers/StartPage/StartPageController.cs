@@ -23,6 +23,7 @@ namespace GubbSMDotnNet.Controllers.StartPage
             // Constructor body
         }
 
+        [HttpGet]
         public override ViewResult Index()
         {
             return base.View("Views/StartPage/Index.cshtml");

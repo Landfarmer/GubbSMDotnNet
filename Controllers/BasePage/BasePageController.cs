@@ -17,7 +17,7 @@ namespace GubbSMDotnNet.Controllers.BasePage
             : base(logger, compositeViewEngine, umbracoContextAccessor)
         {
         }
-
+        [HttpGet]
         public override IActionResult Index()
         {
             // Your implementation here
