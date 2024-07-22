@@ -22,9 +22,10 @@ namespace GubbSMDotnNet.Controllers.Shared.Video
                         fileData = binaryReader.ReadBytes((int)file.ContentLength);
                     }
 
+
                     // Create a RestClient and RestRequest
                     RestClient client = new ("https://video.bunnycdn.com/library/274391/videos/5b564acc-3ce3-4eb6-b2dd-de74e48a3db2");
-                    var request = new RestRequest(Method.Put.ToString());
+                    RestRequest request = new (Method.Put.ToString());
                     RestResponse response = client.ExecuteGet(request);
 
 
